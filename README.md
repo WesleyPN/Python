@@ -1,2 +1,2 @@
 # Python
- Meu estudo de python
+ Meu estudo de python.
