@@ -1,4 +1,4 @@
-n = str(input('Digite o nome completo: '))
+n = str(input('Digite o nome completo: ')).strip()
 n2 = n.split()
 un = int(len(n2))-1
 print('O primeiro nome é {}'.format(n2[0]))
