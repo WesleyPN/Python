@@ -1,5 +1,5 @@
 from math import sin, cos, tan, radians
-a = float(input('Digite o valor do ângulo'))
+a = float(input('Digite o valor do ângulo: '))
 s = sin(radians(a))
 c = cos(radians(a))
 t = tan(radians(a))
