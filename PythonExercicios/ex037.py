@@ -6,6 +6,8 @@ if c == 1:
 elif c == 2:
     o = str(oct(d))
     print('{} em octal é {}'.format(d, o[2::]))
-else:
+elif c == 3:
     h = str(hex(d)).upper()
     print('{} em hexadecimal é {}'.format(d, h[2::]))
+else:
+    print('Opção inválida. Tente novamente.')
