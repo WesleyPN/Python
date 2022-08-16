@@ -4,9 +4,10 @@ hmv = ''
 ihmv = 0
 m20 = 0
 for i in range(0, 4):
-    n = str(input('Digite o nome da {}ª pessoa: '.format(i+1)))
-    a = int(input('Digite a idade da {}ª pessoa: '.format(i+1)))
-    s = str(input('Digite o sexo da {}ª pessoa (M ou F): '.format(i+1)))
+    print('----- {}ª PESSOA -----'.format(i+1))
+    n = str(input('Nome: '))
+    a = int(input('Idade: '))
+    s = str(input('Sexo [M/F]: '))
     mi += a
     if i == 3:
         mi = mi/(i+1)
@@ -17,4 +18,4 @@ for i in range(0, 4):
         m20 += 1
 print('A média de idade do grupo é de {} anos.'.format(mi))
 print('O nome do homem mais velho é {}, com {} anos.'.format(hmv, ihmv))
-print('{} mulheres tem menos de 20 anos de idade.'.format(m20))
+print('No total {} mulheres tem menos de 20 anos de idade.'.format(m20))
