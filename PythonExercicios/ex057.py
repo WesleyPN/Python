@@ -1,3 +1,4 @@
-s = str(input('Sexo [M/F]: ')).upper()
-while s != 'M' or s != 'F':
-    s = str(input('Sexo [M/F]: ')).upper()
+s = str(input('Sexo [M/F]: ')).strip()
+while s not in 'MmFf':
+    print('')
+    s = str(input('Sexo [M/F]: ')).strip()
