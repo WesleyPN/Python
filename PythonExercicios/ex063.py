@@ -15,4 +15,4 @@ while c < n:
         ult = pxm
         fib += str(ult)+' - '
     c += 1
-print(fib)
+print(fib+'Fim')
