@@ -16,5 +16,3 @@ while c < n:
         fib += str(ult)+' - '
     c += 1
 print(fib)
-
-
