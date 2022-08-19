@@ -21,6 +21,8 @@ while m != 5:
         else:
             r = n2
         print('O maior número é {}'.format(r))
-    elif m == 4 or m == 0:
+    elif m == 4:
         n1 = int(input('Digite o 1º número: '))
         n2 = int(input('Digite o 2º número: '))
+    elif m == 0 or m > 5:
+        print('Opção inválida! Tente novamente')
