@@ -1,6 +1,4 @@
-n = 0
-s = 0
-c = 0
+n = s = c = 0
 while n != 999:
     n = int(input('Digite um número qualquer [Para sair digite 999]: '))
     if n != 999:
