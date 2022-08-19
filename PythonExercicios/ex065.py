@@ -1,6 +1,4 @@
-n = 0
-s = 0
-c = 0
+n = s = c = 0
 r = 's'
 while r in 'Ss':
     n = float(input('Digite um número: '))
