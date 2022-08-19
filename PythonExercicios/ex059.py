@@ -20,7 +20,7 @@ while m != 5:
             r = n1
         else:
             r = n2
-        print('O maior número é {}'.format(r))
+        print('Entre {} e {} o maior número é {}'.format(n1, n2, r))
     elif m == 4:
         n1 = int(input('Digite o 1º número: '))
         n2 = int(input('Digite o 2º número: '))
