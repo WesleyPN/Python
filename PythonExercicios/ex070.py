@@ -1,5 +1,5 @@
 an = ''
-ap = cm = 0
+ap = cm = mp =  0
 print('--'*20)
 print('     LOJA SUPER BARATÃO')
 print('--'*20)
@@ -15,7 +15,6 @@ while True:
     elif pp < mp:
         an = np
         mp = pp
-
     r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     while r not in 'SsNn':
         r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
