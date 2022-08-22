@@ -1,8 +1,8 @@
 an = ''
-ap = cm = mp =  0
-print('--'*20)
-print('     LOJA SUPER BARATÃO')
-print('--'*20)
+ap = cm = mp = 0
+print('=='*20)
+print('{:-^40}'.format('LOJAS WPN'))
+print('=='*20)
 while True:
     np = str(input('Nome do Produto: '))
     pp = float(input('Preço: R$'))
@@ -19,7 +19,7 @@ while True:
     while r not in 'SsNn':
         r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if r == 'N':
-        print('-------------FIM DO PROGRAMA-------------')
+        print('{:-^40}'.format('FIM DO PROGRAMA'))
         break
 print(f'O total da compra foi: R${ap:.2f}')
 print(f'Temos {cm} produtos custando mais de R$1000.00')
