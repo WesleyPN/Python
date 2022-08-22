@@ -10,15 +10,15 @@ while True:
     while s not in 'MmFf':
         s = str(input('Sexo [M/F]: ')).upper().strip()[0]
     print('--'*30)
-    r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
-    while r not in 'SsNn':
-        r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if i > 18:
         ci += 1
     if s == 'M':
         ch += 1
     if i < 20 and s == 'F':
         cm += 1
+    r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    while r not in 'SsNn':
+        r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if r == 'N':
         break
 print('--' * 20)
