@@ -21,7 +21,7 @@ while True:
         cm += 1
     if r == 'N':
         break
-        print('--' * 20)
+print('--' * 20)
 print(f'A quantidade de pessoas com mais de 18 anos é: {ci}')
 print(f'A quantidade de homens cadastrados é: {ch}')
 print(f'A quantidade de mulheres com menos de 20 anos é: {cm}')
