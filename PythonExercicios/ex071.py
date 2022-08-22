@@ -1,5 +1,5 @@
 print('=='*20)
-print('     BANCO WPN')
+print('{:^40}'.format('BANCO WPN'))
 print('=='*20)
 n = int(input('Quanto deseja sacar? R$'))
 r = n
