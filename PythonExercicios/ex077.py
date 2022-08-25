@@ -1,9 +1,8 @@
 palavras = ('aprender', 'programar', 'linguagem', 'python', 'curso', 'gratis', 'estudar',
             'praticar', 'trabalhar', 'mercado', 'programador', 'futuro')
-for c in range(0, len(palavras)):
-    p = str(palavras[c])
+for p in palavras:
     vogais = ''
-    for v in range(0, len(p)):
-        if p[v].upper() in 'AEIOU':
-            vogais += p[v]+' '
+    for v in p:
+        if v.upper() in 'AEIOU':
+            vogais += v+' '
     print(f'Na palavra {p.upper()} temos {vogais}')
