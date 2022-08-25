@@ -4,5 +4,5 @@ print('-'*40)
 print('{: ^40}'.format('LISTAGEM DE PREÇOS'))
 print('-'*40)
 for c in range(0, len(produtos), 2):
-    print(f'{produtos[c]:.<30}R${produtos[c+1]: >7.2f}')
+    print(f'{produtos[c]:.<30}R${produtos[c+1]:>7.2f}')
 print('-'*40)
