@@ -18,6 +18,7 @@ while True:
     while r not in 'SN':
         r = str(input('Quer continuar? [S/N]')).upper().strip()[0]
     if r == 'N':
+        ln.sort()
         break
 print('-='*30)
-print(f'Você digitou os valores: {sorted(ln)}')
+print(f'Você digitou os valores: {ln}')
