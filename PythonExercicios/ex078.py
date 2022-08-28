@@ -1,8 +1,8 @@
-lista = [int(input('Digite o 1º valor: ')), int(input('Digite o 2º valor: ')), int(input('Digite o 3º valor: ')),
-         int(input('Digite o 4º valor: ')), int(input('Digite o 5º valor: '))]
+lista = []
 mai = men = 0
-pos1 = pos2 = ''
-for c in range(len(lista)):
+posmai = posmen = ''
+for c in range(0, 5):
+    lista.append(int(input(f'Digite um valor para a {c}º posição: ')))
     if c == 0:
         mai = lista[c]
         men = mai
@@ -11,11 +11,11 @@ for c in range(len(lista)):
     elif lista[c] < men:
         men = lista[c]
 for c, v in enumerate(lista):
-    if mai == lista[c]:
-        pos1 += str(c)+'...'
-    elif men == lista[c]:
-        pos2 += str(c)+'...'
+    if mai == v:
+        posmai += str(c) + '...'
+    elif men == v:
+        posmen += str(c) + '...'
 
 print(f'Você digitou os valores: {lista}')
-print(f'O maior valor foi {mai} nas posições {pos1}.')
-print(f'O menor valor foi {men} nas posições {pos2}.')
+print(f'O maior valor foi {mai} nas posições {posmai}.')
+print(f'O menor valor foi {men} nas posições {posmen}.')
