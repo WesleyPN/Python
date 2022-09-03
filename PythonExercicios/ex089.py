@@ -1,11 +1,9 @@
 alunos = list()
-notas = list()
 while True:
     nome = str(input('Nome: ')).title()
     n1 = float(input('Nota 1: '))
     n2 = float(input('Nota 2: '))
-    notas = [n1, n2]
-    alunos.append([nome[:], notas[:], (n1+n2)/2])
+    alunos.append([nome[:], [n1, n2], (n1+n2)/2])
 
     r = str(input('Quer continuar? [S/N]')).upper().strip()[0]
     while r not in 'SN':
