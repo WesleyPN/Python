@@ -15,7 +15,7 @@ pessoas['nome'] = 'André'
 pessoas['peso'] = 79.8
 del pessoas['sexo']
 print(pessoas)"""
-#----------------------------
+# ----------------------------
 """brasil = []
 estado1 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
 estado2 = {'uf': 'São Paulo', 'sigla': 'SP'}
@@ -25,7 +25,7 @@ brasil.append(estado2)
 print(estado1)
 print(estado2)
 print(brasil[1]['uf'])"""
-#----------------------------
+# ----------------------------
 estado = {}
 brasil = []
 for c in range(0, 3):
