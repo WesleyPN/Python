@@ -18,4 +18,3 @@ ord = sorted(res.items(), key=itemgetter(1), reverse=True)
 for c, j in enumerate(ord):
     print(f'{c+1}º lugar: {j[0]} com {j[1]}')
     sleep(1)
-
