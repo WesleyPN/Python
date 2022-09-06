@@ -3,7 +3,7 @@ aluno['Nome'] = str(input('Nome: ')).title()
 aluno['Média'] = float(input(f'Média de {aluno["Nome"]}: '))
 if aluno['Média'] >= 7:
     aluno['Situação'] = 'Aprovado'
-elif 5 < aluno['Média'] < 7:
+elif 5 <= aluno['Média'] < 7:
     aluno['Situação'] = 'Recuperação'
 else:
     aluno['Situação'] = 'Reprovado'
