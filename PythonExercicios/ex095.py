@@ -19,11 +19,9 @@ while True:
     if r == 'N':
         print('-='*40)
         break
-print(f'{"COD": <5}{"Nome": <20}{"Gols": <20}{"Total": <5}')
-print('--'*40)
+print(f'\033[4m{"COD": <5}|{"Nome": <20}|{"Gols": <20}|{"Total": <5}\033[m')
 for c in range(0, len(atletas)):
-    print(f'{c: ^5}{atletas[c]["Nome"]: <20}{str(atletas[c]["Gols"]): <20}{atletas[c]["Total"]: <5}')
-print('--'*40)
+    print(f'\033[4m{c: ^5}|{atletas[c]["Nome"]: <20}|{str(atletas[c]["Gols"]): <20}|{atletas[c]["Total"]: <5}\033[m')
 while True:
     j = int(input('Mostrar dados de qual jogador? '))
     while j not in range(0, len(atletas)) and j != 999:
