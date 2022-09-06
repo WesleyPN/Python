@@ -30,7 +30,7 @@ while True:
         print(f'ERRO! Não existe jogador com código {j} Tente novamente.')
         j = int(input('Mostrar dados de qual jogador? '))
     if j == 999:
-        print('-='*40)
+        print('<<VOLTE SEMPRE!>>')
         break
     else:
         print(f'-- LEVANTAMENTO DO JOGADOR {atletas[j]["Nome"]}:')
