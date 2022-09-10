@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 
 def sorteia(lst):
@@ -6,6 +7,7 @@ def sorteia(lst):
     for n in range(0, 5):
         lst.append(randint(1, 10))
         print(lst[n], end=' ')
+        sleep(0.3)
     print('PRONTO!')
 
 
