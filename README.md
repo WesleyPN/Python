@@ -1,4 +1,4 @@
 # Python
- Meu estudo de python.
+ Meus estudos de Python do Curso em Video
 
- Do "Olá Mundo!" ao infinito e além.
+ 
