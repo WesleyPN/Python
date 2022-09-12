@@ -5,7 +5,7 @@ def maior(*num):
     maiorNumero = 0
     print('Analizando os valores passados...')
     for c, n in enumerate(num):
-        print(n, end=' ')
+        print(n, end=' ',flush=True)
         sleep(0.5)
         if c == 0:
             maiorNumero = n
