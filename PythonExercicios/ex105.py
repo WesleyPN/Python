@@ -5,25 +5,15 @@ def notas(*notas, sit=False):
     :param sit: valor opcional, indicando se deve ou não adicionar a situação.
     :return: dicionário com vária informações sobre a situação da turma.
     """
-    soma = maior = menor = 0
-    turma = {}
-    for c, v in enumerate(notas):
-        if c == 0:
-            maior = menor = v
-        elif v > maior:
-            maior = v
-        elif v < menor:
-            menor = v
-        soma += v
-    media = soma / len(notas)
+    turma = dict()
     turma['Total'] = len(notas)
-    turma['Maior'] = maior
-    turma['Menor'] = menor
-    turma['Média'] = media
+    turma['Maior'] = max(notas)
+    turma['Menor'] = min(notas)
+    turma['Média'] = sum(notas)/len(notas)
     if sit:
-        if media >= 7:
+        if sum(notas)/len(notas) >= 7:
             turma['Situação'] = 'BOA'
-        elif 5 < media < 7:
+        elif 5 < sum(notas)/len(notas) < 7:
             turma['Situação'] = 'RAZOÁVEL'
         else:
             turma['Situação'] = 'RUIM'
