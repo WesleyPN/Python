@@ -1,6 +1,6 @@
 def leiaInt(txt=''):
     while True:
-        num = input(txt)
+        num = str(input(txt)).strip()
         if num.isnumeric():
             return num
         else:
