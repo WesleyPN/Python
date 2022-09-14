@@ -5,8 +5,8 @@ def escreva(txt):
     print(linha)
 
 
-#escreva('Wesley Pinheiro')
-#escreva('Curso de Python no YouTube')
-#escreva('CeV')
-#titulo = str(input('Digite um texto: ')).title().strip()
-#escreva(titulo)
+escreva('Wesley Pinheiro')
+escreva('Curso de Python no YouTube')
+escreva('CeV')
+titulo = str(input('Digite um texto: ')).title().strip()
+escreva(titulo)
