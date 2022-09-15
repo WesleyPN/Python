@@ -12,7 +12,7 @@ def escreva(txt, cor='Fim'):
 
 
 def manual(txt):
-    escreva(f"Acessando o manual do comando \'{txt}\'", 'Azul')
+    escreva(f'Acessando o manual do comando \'{txt}\'', 'Azul')
     print(cores['Branco'])
     help(txt)
     print(cores['Fim'], end='')
