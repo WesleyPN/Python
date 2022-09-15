@@ -1,23 +1,41 @@
-def escreva(txt):
+from time import sleep
+
+
+def escreva(txt, cor='Fim'):
     linha = '~' * int(len(txt)+4)
+    print(cores[cor], end='')
     print(linha)
     print(f'{txt}'.center(len(linha)))
     print(linha)
+    print(cores['Fim'], end='')
 
 
-def manual():
-    while True:
-        escreva('SISTEMA DE AJUDA PyHELP')
-        c = str(input('Digite o comando: ')).strip()
-        m = ''
-        fim = False
-        if c.upper().strip() == 'FIM':
-            fim = True
-        else:
-            m = str(help(c))
-        if fim:
-            break
-    return f'\033[7;30m{m}\033[m'
+def manual(txt):
+    escreva(f"Acessando o manual do comando '{txt}'", 'Azul')
+    sleep(1)
+    print(cores['Branco'])
+    help(txt)
+    print(cores['Fim'], end='')
 
 
-manual()
+cores = {'Fim': '\033[m',
+         'Branco': '\033[7;40m',
+         'Vermelho': '\033[0;41m',
+         'Verde': '\033[0;42m',
+         'Amarelo': '\033[0;43m',
+         'Azul': '\033[0;44m',
+         'Magenta': '\033[0;45m',
+         'Ciano': '\033[0;46m',
+         'Cinza': '\033[0;47m'}
+
+while True:
+    sleep(1)
+    escreva('SISTEMA DE AJUDA PyHELP', 'Verde')
+    c = str(input('Função ou Biblioteca > ')).strip()
+    m = ''
+    fim = False
+    if c.upper().strip() == 'FIM':
+        escreva(f'ATÉ LOGO!', 'Vermelho')
+        break
+    else:
+        manual(c)
