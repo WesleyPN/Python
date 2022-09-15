@@ -8,14 +8,15 @@ def escreva(txt, cor='Fim'):
     print(f'{txt}'.center(len(linha)))
     print(linha)
     print(cores['Fim'], end='')
+    sleep(1)
 
 
 def manual(txt):
-    escreva(f"Acessando o manual do comando '{txt}'", 'Azul')
-    sleep(1)
+    escreva(f"Acessando o manual do comando \'{txt}\'", 'Azul')
     print(cores['Branco'])
     help(txt)
     print(cores['Fim'], end='')
+    sleep(2)
 
 
 cores = {'Fim': '\033[m',
@@ -29,7 +30,6 @@ cores = {'Fim': '\033[m',
          'Cinza': '\033[0;47m'}
 
 while True:
-    sleep(1)
     escreva('SISTEMA DE AJUDA PyHELP', 'Verde')
     c = str(input('Função ou Biblioteca > ')).strip()
     m = ''
