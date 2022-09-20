@@ -1,7 +1,7 @@
 def aumentar(n, p, fmt=False):
     porcento = n * p / 100
     if fmt:
-        return moeda(n + porcento, True)
+        return moeda(n + porcento)
     else:
         return n + porcento
 
@@ -9,28 +9,24 @@ def aumentar(n, p, fmt=False):
 def diminuir(n, p, fmt=False):
     porcento = n * p / 100
     if fmt:
-        return moeda(n - porcento, True)
+        return moeda(n - porcento)
     else:
         return n - porcento
 
 
 def dobro(n, fmt=False):
     if fmt:
-        return moeda(n * 2, True)
+        return moeda(n * 2)
     else:
         return n * 2
 
 
 def metade(n, fmt=False):
     if fmt:
-        return moeda(n / 2, True)
+        return moeda(n / 2)
     else:
         return n / 2
 
 
-def moeda(n, fmt=False):
-    if fmt:
-        return f'R${n:.2f}'
-    else:
-        return n
-
+def moeda(n):
+    return f'R${n:.2f}'
