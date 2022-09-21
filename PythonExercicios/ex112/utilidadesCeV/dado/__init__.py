@@ -3,13 +3,13 @@ def leiaDinheiro(txt=''):
     val = 0
 
     while True:
-        num = str(input(txt)).strip()
+        num = str(input(txt)).replace(',', '.').strip()
 
-        if num.isdecimal():
+        if num.isalpha():
+            print(f'\033[31mERRO! "{num}" é um preço inválido!\033[m')
+        else:
             val = float(num)
             cond = True
-        else:
-            print(f'\033[31mERRO! "{num}" é um preço inválido!\033[m')
         if cond:
             break
     return val
