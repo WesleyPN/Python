@@ -5,7 +5,7 @@ def leiaDinheiro(txt=''):
     while True:
         num = str(input(txt)).replace(',', '.').strip()
 
-        if num.isalpha():
+        if num.isalpha() or num == '':
             print(f'\033[31mERRO! "{num}" é um preço inválido!\033[m')
         else:
             val = float(num)
