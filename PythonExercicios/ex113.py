@@ -1,39 +1,29 @@
 def leiaInt(txt=''):
-    cond = False
-    val = 0
-    try:
-        while True:
-            try:
-                num = str(input(txt)).strip()
-                val = int(num)
-                cond = True
-                if cond:
-                    break
-            except (ValueError, TypeError):
-                print('\033[31mERRO! Digite um número inteiro válido.\033[m')
-    except KeyboardInterrupt:
-        num = 0
-        print('\033[31mUsuario preferiu não digitar esse número.\033[m')
-    return num
+    while True:
+        try:
+            num = int(input(txt))
+        except (ValueError, TypeError):
+            print('\033[31mERRO! Digite um número inteiro válido.\033[m')
+            continue
+        except KeyboardInterrupt:
+            print('\033[31mUsuario preferiu não digitar esse número.\033[m')
+            return 0
+        else:
+            return num
 
 
 def leiaFloat(txt=''):
-    cond = False
-    val = 0
-    try:
-        while True:
-            try:
-                num = str(input(txt)).strip()
-                val = float(num)
-                cond = True
-                if cond:
-                    break
-            except (ValueError, TypeError):
-                print('\033[31mERRO! Digite um número decimal válido.\033[m')
-    except KeyboardInterrupt:
-        num = 0
-        print('\033[31mUsuario preferiu não digitar esse número.\033[m')
-    return num
+    while True:
+        try:
+            num = float(input(txt))
+        except (ValueError, TypeError):
+            print('\033[31mERRO! Digite um número decimal válido.\033[m')
+            continue
+        except KeyboardInterrupt:
+            print('\033[31mUsuario preferiu não digitar esse número.\033[m')
+            return 0
+        else:
+            return num
 
 
 i = leiaInt('Digite um Inteiro: ')
