@@ -1,3 +1,3 @@
-from ex115 import menu
+from ex115.menu import cadmenu
 
-menu.cadpessoa()
+cadmenu()
