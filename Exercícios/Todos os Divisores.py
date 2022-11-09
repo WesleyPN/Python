@@ -11,7 +11,7 @@ A saída do seu programa deve conter apenas uma linha com os divisores de X sepa
 Os divisores devem ser impressos em ordem crescente.
 Restrições
 
-    2<= X <=10⁹
+    2 <= X <= 10⁹
 """
 #---------------------------------------
 i = int(input("Digite um número: "))
