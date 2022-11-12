@@ -28,7 +28,7 @@ def collatz (numero):
             numero = numero/2
         else:
             numero = 3*numero+1
-        contador.append(numero)
+        contador.append(int(numero))
     contador.pop()
     return contador
 
